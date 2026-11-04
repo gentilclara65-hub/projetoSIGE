@@ -1,0 +1,15 @@
+# Proteger configuração com senha do banco
+/config/Database.php
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Backups e arquivos compactados
+*.zip
+*.rar
+*.7z
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
