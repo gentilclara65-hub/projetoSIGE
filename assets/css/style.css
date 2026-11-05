@@ -1030,3 +1030,42 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     text-shadow: 0 0 8px #ff2bd6;
     box-shadow: none !important;
 }
+
+
+/* =================================
+   AJUSTE DAS TABELAS DE RELATÓRIOS
+================================= */
+
+.card {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.card table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+.card table th,
+.card table td {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    vertical-align: middle;
+}
+
+/* Evita que e-mails e nomes longos estourem as colunas */
+.card table td {
+    line-height: 1.5;
+}
+
+/* Mantém a tabela utilizável em telas menores */
+@media (max-width: 900px) {
+    .card {
+        overflow-x: auto;
+    }
+
+    .card table {
+        min-width: 650px;
+    }
+}
