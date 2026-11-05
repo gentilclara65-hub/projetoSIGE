@@ -13,3 +13,12 @@
 # Arquivos do sistema
 .DS_Store
 Thumbs.db
+
+# Arquivos de ambiente e configurações privadas
+.env
+.env.*
+!.env.example
+
+# Dependências e arquivos temporários
+/vendor/
+/node_modules/
